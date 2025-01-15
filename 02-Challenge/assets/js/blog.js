@@ -19,7 +19,7 @@ const buildElement = function (element, text, parentEl) {
 // TODO: Create a function that handles the case where there are no blog posts to display
 
 const noPosts = function () {
-    buildElement('h3', 'No posts to display', 'no-posts');
+    buildElement('h3', 'No Blog posts yet...', main);
     };
 
 // TODO: Create a function called `renderBlogList` that renders the list of blog posts if they exist. If not, call the no posts function.

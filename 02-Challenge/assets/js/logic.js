@@ -15,8 +15,6 @@ function toggleMode() {
   }
 }
 
-
-
 document.querySelector('#toggle').addEventListener('click', toggleMode);
 
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.

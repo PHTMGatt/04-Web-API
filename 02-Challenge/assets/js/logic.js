@@ -2,18 +2,28 @@
 
 function toggleMode() {
   const body = document.body;
-  ;
+  const root = document.documentElement;
 
   if (body.classList.contains('dark')) {
     body.classList.remove('dark');
-    
+    root.style.setProperty('--circle-color', 'white');
     localStorage.setItem('mode', 'light');
   } else {
     body.classList.add('dark');
-    
+    root.style.setProperty('--circle-color', 'black');
     localStorage.setItem('mode', 'dark');
   }
 }
+
+// const applyMode = function (mode) { 
+//   let icon, circleColor;
+//   if (mode === 'light') {
+//     icon = '';
+//     circleColor = '#black';
+//   } else {
+//     icon = '';
+//     circleColor = '#white';
+//   }
 
 document.querySelector('#toggle').addEventListener('click', toggleMode);
 

@@ -8,7 +8,7 @@ const handleFormSubmit = function (event) {
     console.log('form submitted');
     event.preventDefault();
     
-    const userName = document.querySelector('#username').value;
+    const username = document.querySelector('#username').value;
     const title = document.querySelector('#title').value;
     const content = document.querySelector('#content').value;
     const pTag = document.querySelector('p');
@@ -19,7 +19,7 @@ const handleFormSubmit = function (event) {
     }
     
     
-    storeLocalStorage({ userName, title, content });
+    storeLocalStorage({ username, title, content });
     
     redirectPage('blog.html');
     };

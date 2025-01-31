@@ -35,7 +35,7 @@ const renderBlogList = function () {
         const article = document.createElement('article');
         buildElement('h2', post.title, article);
         buildElement('blockquote', post.content, article);
-        buildElement('p', post.userName, article);
+        buildElement('p', post.username, article);
         main.appendChild(article);
     });
     };
